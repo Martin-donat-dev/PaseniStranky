@@ -1,0 +1,207 @@
+.mydogs{
+    text-align: center;
+}
+.mydogs__title{
+    font-size: var(--size-2xl);
+    color: var(--clr-dark);
+
+    margin-bottom: 2rem;
+}
+.mydogs__dog-title{
+    font-size: var(--size-base);
+    color: var(--clr-dark);
+
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.mydogs__dog{
+    margin-bottom: 2rem;
+    
+}
+.mydogs__dog-description1{
+    font-size: var(--size-base);
+    color: var(--clr-slate800);
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+}
+.mydogs__dog-description2{
+    font-size: var(--size-base);
+    color: var(--clr-slate800);
+    margin-top: 1.5rem;
+}
+.mydogs__dog-img{
+    border-radius: 25px;
+}
+
+@media (min-width: 475px) {
+    .mydogs__title{
+        font-size: var(--size-3xl);
+    }
+    .mydogs__dog-title{
+        font-size: var(--size-xl);
+        color: var(--clr-dark);
+    
+        
+    }
+    .mydogs__dog-description1{
+        font-size: var(--size-base);
+        
+    }
+    .mydogs__dog-description2{
+        font-size: var(--size-base);
+        
+    }
+  }
+  /* sm */
+  @media (min-width: 640px) {
+    .mydogs__title{
+        font-size: var(--size-3xl);
+    }
+    .mydogs__dog-title{
+        font-size: var(--size-2xl);
+    }
+    .mydogs__dog-description1{
+        font-size: var(--size-lg);
+        margin-bottom: 1rem;
+        margin-top: 1.5rem;
+    }
+    .mydogs__dog-description2{
+        font-size: var(--size-lg);
+        
+    }
+  }
+  /* md */
+  @media (min-width: 768px) {
+    .mydogs__container{
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        'image1 content1'
+        'content2 image2'
+        'image3 content3'
+        'content4 image4'
+        'image5 content5';
+        
+        background-color: rgb(245, 244, 244);
+        padding: 2%;
+        margin-right: 3%;
+        margin-left: 3%;
+        border-radius: 10px;
+    }
+
+    .mydogs__image1{
+        grid-area: image1;
+    }
+    .mydogs__image2{
+        grid-area: image2;
+    }
+    .mydogs__image3{
+        grid-area: image3;
+    }
+    .mydogs__image4{
+        grid-area: image4;
+    }
+    .mydogs__image5{
+        grid-area: image5;
+    }
+    .mydogs__content1{
+        grid-area: content1;
+    }
+    .mydogs__content2{
+        grid-area: content2;
+    }
+    .mydogs__content3{
+        grid-area: content3;
+    }
+    .mydogs__content4{
+        grid-area: content4;
+    }
+    .mydogs__content5{
+        grid-area: content5;
+    }
+    .mydogs__dog-img{
+        margin-top: 2rem;
+    }
+
+    .mydogs__title{
+       
+        font-size: var(--size-4xl);
+    }
+    .mydogs__dog-title{
+        display: block;
+        font-size: var(--size-lg);
+    }
+    .mydogs__dog-description1{
+        font-size: var(--size-xs);
+        margin-bottom: 1em 0;
+        
+    }
+    .mydogs__dog-description2{
+        font-size: var(--size-xs);
+        margin-bottom: 1em;
+    }
+    .mydogs__dog{
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+  }
+  /* lg */
+  @media (min-width: 1024px) {
+    .mydogs__title{
+        font-size: var(--size-4xl);
+        
+    }
+   
+    .mydogs__dog-title{
+        font-size: var(--size-3xl);
+    }
+    .mydogs__dog-description1{
+        font-size: var(--size-xl);
+        margin-bottom: 1rem;
+        margin-top: 1.5rem;
+    }
+    .mydogs__dog-description2{
+        font-size: var(--size-xl);
+        
+    }
+  }
+  
+  /* xl */
+  @media (min-width: 1280px) {
+    .mydogs__title{
+        font-size: var(--size-5xl);
+        
+    }
+    .mydogs__dog-title{
+        font-size: var(--size-4xl);
+    }
+    .mydogs__dog-description1{
+        font-size: var(--size-xl);
+        margin-bottom: 1rem;
+        margin-top: 1.5rem;
+    }
+    .mydogs__dog-description2{
+        font-size: var(--size-xl);
+        
+    }
+  }
+  /* 2xl */
+  @media (min-width: 1536px) {
+    .mydogs__title{
+        font-size: var(--size-6xl);
+        margin-bottom: 2rem;
+    }
+    .mydogs__dog-title{
+        font-size: var(--size-4xl);
+    }
+    .mydogs__dog-description1{
+        font-size: var(--size-2xl);
+        margin-bottom: 1rem;
+        margin-top: 1.5rem;
+    }
+    .mydogs__dog-description2{
+        font-size: var(--size-2xl);
+        
+    }
+  }

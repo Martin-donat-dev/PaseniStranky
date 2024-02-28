@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/modern-normalize.css">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/components/header.css">
+  <link rel="stylesheet" href="../styles/components/hero.css">
+  <link rel="stylesheet" href="../styles/components/aboutme.css">
+  <link rel="stylesheet" href="../styles/components/success.css">
+  <link rel="stylesheet" href="../styles/components/mydogs.css">
+  <link rel="stylesheet" href="../styles/components/contact.css">
+  <link rel="icon" type="image/x-icon" href="/public/favicon.ico">
+  <link rel="stylesheet" href="../styles/components/sidebar.css">
+  <link rel="stylesheet" href="../styles/utils.css">
+  <title>Kontakt</title>
+</head>
+
+<body>
+  <header class="header container__header ">
+    <h2>Pasení Velký Vřešťov</h2>
+    <nav>
+      <ul class="header__sidebar">
+        <li onclick=hideSidebar() class="sidebar__close">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+            <path
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+          </svg>
+
+        </li>
+        <li>
+          <a class="header__link" href="/">Domů</a>
+        </li>
+        <li>
+          <a class="header__link" href="/pmne.html">O Mně</a>
+        </li>
+        <li>
+          <a href="/mojipsi.html" class="header__link">Moji psi</a>
+        </li>
+        <li>
+          <a class="header__link" href="/kontakt.html">Kontakt</a>
+        </li>
+      </ul>
+
+
+      <ul class="header__menu">
+        <li>
+          <a class="header__link" href="/">Domů</a>
+        </li>
+        <li>
+          <a class="header__link" href="/omne.html">O Mně</a>
+        </li>
+        <li>
+          <a href="/mojipsi.html" class="header__link">Moji psi</a>
+        </li>
+        <li>
+          <a class="header__link" href="/kontakt.html">Kontakt</a>
+        </li>
+
+      </ul>
+      <button onclick=showSidebar() class="header__bars">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path fill-rule="evenodd"
+            d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+            clip-rule="evenodd" />
+        </svg>
+
+      </button>
+    </nav>
+  </header>
+  <main>
+    <section class="section container contact">
+      <h2 class="contact__title">Kontakt</h2>
+      <p class="contact__description">Domluvit se můžeme přes email,telefon nebo facebook</p>
+      <p class="contact__description">email: donatova.z@seznam.cz</p>
+      <p class="contact__description">tel.: +420 721 953 395 </p>
+      <div class="contact__links">
+        <a href="https://www.facebook.com/martina.donatova.7" target="_blank">
+          <img class="contact__img-links " src="/public/facebook.png">
+        </a>
+        <a href="https://www.messenger.com/t/100000326094406" target="_blank">
+          <img class="contact__img-links " src="/public/messenger.png">
+        </a>
+      </div>
+      <p class="contact__description" style="margin-top: 2rem;">Parkovaní dle domluvy</p>
+      <img src="/public/Mapa.png" class="contact__img-map" alt="">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d803.6972472822113!2d15.758453497575513!3d50.360634534462996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470e85000fa0115b%3A0xfc4b41ae469f377b!2zUGFzZW7DrSBWZWxrw70gVsWZZXPFpW92!5e1!3m2!1sen!2scz!4v1708688574513!5m2!1sen!2scz"
+        class="contact__map" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+  </main>
+  <footer></footer>
+  <script>
+    function showSidebar() {
+      const sidebar = document.querySelector('.header__sidebar');
+      sidebar.style.display = 'flex';
+
+    }
+    function hideSidebar() {
+      const sidebar = document.querySelector('.header__sidebar');
+      sidebar.style.display = 'none';
+    }
+    window.addEventListener('resize', function () {
+      if (window.innerWidth >= 768) {
+        document.querySelector('.header__sidebar').style.display = 'none';
+      }
+    });
+  </script>
+</body>
+
+</html>

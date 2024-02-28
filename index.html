@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/modern-normalize.css">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/components/header.css">
+  <link rel="stylesheet" href="../styles/components/hero.css">
+  <link rel="stylesheet" href="../styles/components/aboutme.css">
+  <link rel="stylesheet" href="../styles/components/success.css">
+  <link rel="stylesheet" href="../styles/components/mydogs.css">
+  <link rel="stylesheet" href="../styles/components/contact.css">
+  <link rel="stylesheet" href="../styles/components/sidebar.css">
+  <link rel="icon" type="image/x-icon" href="/public/favicon.ico">
+  <link rel="stylesheet" href="../styles/utils.css">
+  <title>Hlavní stránka</title>
+</head>
+
+<body class="background">
+  <header class="header container__header ">
+    <h2>Pasení Velký Vřešťov</h2>
+    <nav>
+      <ul class="header__sidebar">
+        <li onclick=hideSidebar() class="sidebar__close">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+            <path
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+          </svg>
+
+        </li>
+        <li>
+          <a class="header__link" href="/">Domů</a>
+        </li>
+        <li>
+          <a class="header__link" href="/omne.html">O Mně</a>
+        </li>
+        <li>
+          <a href="/mojipsi.html" class="header__link">Moji psi</a>
+        </li>
+        <li>
+          <a class="header__link" href="/kontakt.html">Kontakt</a>
+        </li>
+      </ul>
+
+
+      <ul class="header__menu">
+        <li>
+          <a class="header__link" href="/">Domů</a>
+        </li>
+        <li>
+          <a class="header__link" href="/omne.html">O Mně</a>
+        </li>
+        <li>
+          <a href="/mojipsi.html" class="header__link">Moji psi</a>
+        </li>
+        <li>
+          <a class="header__link" href="/kontakt.html">Kontakt</a>
+        </li>
+
+      </ul>
+      <button onclick=showSidebar() class="header__bars">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path fill-rule="evenodd"
+            d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+            clip-rule="evenodd" />
+        </svg>
+
+      </button>
+    </nav>
+  </header>
+  <main>
+    <section class="hero container">
+      <h1 class="hero__title">Vítám Vás na stránkách </h1>
+      <p class="hero__text"> tréninkového centra Pasení velký Vřešťov, které se věnuje tréninkům ovčáckých psů a
+        jejich majitelů u ovcí. Tréninky lze domluvit na tel 721953395 nebo přes messenger Martina Donátová.
+      </p>
+      <a class="hero__btn btn" href="/aboutme">
+
+      </a>
+    </section>
+  </main>
+  <footer></footer>
+  <script>
+    function showSidebar() {
+      const sidebar = document.querySelector('.header__sidebar');
+      sidebar.style.display = 'flex';
+
+    }
+    function hideSidebar() {
+      const sidebar = document.querySelector('.header__sidebar');
+      sidebar.style.display = 'none';
+    }
+    window.addEventListener('resize', function () {
+      if (window.innerWidth >= 768) {
+        document.querySelector('.header__sidebar').style.display = 'none';
+      }
+    });
+  </script>
+</body>
+
+</html>
