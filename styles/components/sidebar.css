@@ -36,10 +36,15 @@
 @media (min-width: 475px) {
     .header__sidebar{
         width: 15.625rem;
+        display: none;
     }
 }
 /* sm */
 @media (min-width: 640px) {
+    .header__sidebar{
+        
+        display: none;
+    }
     
 }
 @media (min-width: 768px) {
