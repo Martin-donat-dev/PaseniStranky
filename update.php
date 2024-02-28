@@ -9,15 +9,9 @@ if ($_SERVER['REQUEST_METHOD'] != "POST")
     exit(0);
 }
 
-$body = file_get_contents('php://input');
+//$body = file_get_contents('php://input');
 
-if (!verifySignature($body))
-{
-    error_log("Invalid signature, terminating...");
-    echo 'Invalid signature, terminating...';
-    http_response_code(403);
-    exit(0);
-}
+shell_exec('cd /var/www/MartinDonat && /usr/bin/git pull');
 
 echo 'success';
 
