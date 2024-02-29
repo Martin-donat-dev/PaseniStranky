@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     gap :2rem;
-    margin-top: 10rem;
+    margin-top: 5rem;
 
 }
 .container__header{
@@ -22,11 +22,15 @@
     color: var(--clr-dark);
     letter-spacing: -0.05em;
     line-height: 0.9;
+    letter-spacing: 1.5px;
 }
 .hero__text{
     max-width: 60ch;
     font-size: var(--size-sm);
     color: var(--clr-slate800);
+    font-weight: 500;
+    margin-top: 5rem;
+    
     
 }
 .hero__btn{
@@ -58,7 +62,13 @@
   }
   /* sm */
   @media (min-width: 640px) {
-      
+      .hero__text{
+        margin-top: 0;
+        color: rgb(226, 227, 226);
+        font-weight: 400;
+      }
+      .hero__title{
+        color: rgb(226, 227, 226);
   }
   /* md */
   @media (min-width: 768px) {
@@ -83,15 +93,19 @@
   /* xl */
   @media (min-width: 1280px) {
     .hero{
-        gap: 2.5rem;
+        gap: 2rem;
     }
     .hero__title{
-        margin-right: 10rem;
-        font-size: var(--size-6xl );
+        margin: 0 auto;
+       
+        font-size: var(--size-5xl );
     }
     .hero__text{
         font-size: 1.25rem;
-        margin-right: 10rem;
+        margin: 0 auto;
+        font-weight: 400;
+        width: 60ch;
+        
     }
     .hero__btn{
         font-size: var(--size-xl);
@@ -100,12 +114,6 @@
   }
   /* 2xl */
   @media (min-width: 1536px) {
-      .hero__text{
-        margin-right: 0;
-
-      }
-        .hero__title{
-            margin-right: 0;
-        }
+      
   }
-  
+}

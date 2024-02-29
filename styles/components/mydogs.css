@@ -7,15 +7,22 @@
 
     margin-bottom: 2rem;
 }
+.mydogs__dog-subtitle{
+    font-size: var(--size-lg);
+    color: var(--clr-slate600);
+
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
 .mydogs__container{
-    background-color: rgb(245, 244, 244);
+        background-color: rgb(245, 244, 244);
         padding: 2%;
         margin-right: 3%;
         margin-left: 3%;
         border-radius: 10px;
 }
 .mydogs__dog-title{
-    font-size: var(--size-base);
+    font-size: var(--size-xl);
     color: var(--clr-dark);
 
     margin-top: 2rem;
@@ -50,6 +57,10 @@
     
         
     }
+    .mydogs__dogs-subtitle{
+        font-size: var(--size-lg);
+    
+    }
     .mydogs__dog-description1{
         font-size: var(--size-base);
         
@@ -66,6 +77,10 @@
     }
     .mydogs__dog-title{
         font-size: var(--size-2xl);
+    }
+    .mydogs__dog-subtitle{
+        font-size: var(--size-xl);
+    
     }
     .mydogs__dog-description1{
         font-size: var(--size-lg);
@@ -133,6 +148,10 @@
         display: block;
         font-size: var(--size-lg);
     }
+    .mydogs__dog-subtitle{
+        font-size: var(--size-base);
+       
+    }
     .mydogs__dog-description1{
         font-size: var(--size-xs);
         margin-bottom: 1em 0;
@@ -145,6 +164,7 @@
     .mydogs__dog{
         margin-bottom: 0;
         margin-top: 0;
+        
     }
   }
   /* lg */
@@ -153,7 +173,10 @@
         font-size: var(--size-4xl);
         
     }
-   
+    .mydogs__dog-subtitle{
+        font-size: var(--size-2xl);
+       
+    }
     .mydogs__dog-title{
         font-size: var(--size-3xl);
     }
@@ -172,6 +195,10 @@
   @media (min-width: 1280px) {
     .mydogs__title{
         font-size: var(--size-5xl);
+        
+    }
+    .mydogs__dogs-subtitle{
+        font-size: var(--size-3xl);
         
     }
     .mydogs__dog-title{

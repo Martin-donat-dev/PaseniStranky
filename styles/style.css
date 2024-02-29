@@ -36,9 +36,10 @@ body{
 .background{
     background-image: url("../public/pozadi.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: center 5rem;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    
     
 }
 

@@ -46,7 +46,7 @@
 }
 .contact__map{
     width: 100%;
-    height: 400px;
+    height: 300px;
     border-radius: 10px;
 }
 
@@ -108,7 +108,7 @@
     }
     .contact__img-map{
         width: 770px;
-        height:250px;
+        
     }
   }
   
@@ -120,7 +120,7 @@
     }
     .contact__img-map{
         width: 950px;
-        height:250px;
+        
     }
   }
   /* 2xl */
