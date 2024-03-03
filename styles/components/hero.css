@@ -23,12 +23,13 @@
     letter-spacing: -0.05em;
     line-height: 0.9;
     letter-spacing: 1.5px;
+    color:rgb(226, 227, 226);
 }
 .hero__text{
     max-width: 60ch;
     font-size: var(--size-sm);
     color: var(--clr-slate800);
-    font-weight: 500;
+    font-weight: 600;
     margin-top: 5rem;
     
     

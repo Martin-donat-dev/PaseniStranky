@@ -49,6 +49,11 @@
     content: '';
     margin-left: 0.5rem;
 }
+.success__list-container{
+    display: flex;
+    flex-direction: column-reverse;
+
+}
 /* xs */
 @media (min-width: 475px) {
     .success__content{
