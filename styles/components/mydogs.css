@@ -32,6 +32,25 @@
     margin-bottom: 2rem;
     
 }
+.mydogs__dog-list{
+    display: inline-block;
+    text-align: left;
+    margin: 0 auto;
+    font-size: 1.1rem ;
+    color: var(--clr-slate800);
+}
+.mydogs__dog-list li{
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.4rem;
+}
+.mydogs__dog-list li::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    color: var(--clr-dark);
+    font-weight: bold;
+}
 .mydogs__dog-description1{
     font-size: var(--size-base);
     color: var(--clr-slate800);
@@ -45,6 +64,23 @@
 }
 .mydogs__dog-img{
     border-radius: 25px;
+}
+.mydogs__gallery-link {
+  display: table;      /* makes padding work properly */
+  padding: 0.4rem 0.8rem;    /* adds space around text */
+  margin: 1rem auto;
+  max-width: 100%;             
+  text-align: center;             
+  font-size: 1rem;            
+  color: #ffffff;             
+  background-color: #6a9c78; 
+  border-radius: 6px;          
+  text-decoration: none;       
+  transition: background 0.3s; 
+}
+
+.mydogs__gallery-link:hover {
+  background-color: #55805a;   /* darker on hover */
 }
 
 @media (min-width: 475px) {
@@ -103,7 +139,10 @@
         'content2 image2'
         'image3 content3'
         'content4 image4'
-        'image5 content5';
+        'image5 content5'
+        'content6 image6'
+        'image7 content7'
+        ;
     }
 
     .mydogs__image1{
@@ -121,6 +160,12 @@
     .mydogs__image5{
         grid-area: image5;
     }
+    .mydogs__image6{
+        grid-area: image6;
+    }
+    .mydogs__image7{
+        grid-area: image7;
+    }
     .mydogs__content1{
         grid-area: content1;
     }
@@ -135,6 +180,13 @@
     }
     .mydogs__content5{
         grid-area: content5;
+        font-size: var(--size-sm);
+    }
+    .mydogs__content6{
+        grid-area: content6;
+    }
+    .mydogs__content7{
+        grid-area: content7;
     }
     .mydogs__dog-img{
         margin-top: 2rem;
@@ -197,7 +249,7 @@
         font-size: var(--size-5xl);
         
     }
-    .mydogs__dogs-subtitle{
+    .mydogs__dog-subtitle{
         font-size: var(--size-3xl);
         
     }
